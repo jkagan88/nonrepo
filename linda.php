@@ -7,6 +7,10 @@
     public $stateName;
     public $postalCode;
     public $countryName;
+    
+    protected $address_id;
+    protected $time_created;
+    protected $time_updated;
   
   //Method to display address in HTMLi
     function display() {
@@ -29,3 +33,7 @@
       $address ->stateName = 'Hicks';
       $address ->countryName = 'USA'
       $address ->postalCode = '11111';
+      
+      echo '<h2>'Testing protected access.</h2>';
+      echo "address ID: {$address->_address_id};
+      
