@@ -1,7 +1,7 @@
 <?php
 
 
-  echo 'hi';
+  echo 'hi' ."<br />" . "bye " ;
 
 
 ?>
