@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+</style>
+</head>
+<body>
+<input tabindex="-1" id="theButton" type="button" value="Click Me!">
+<form tabindex="5" action="tables.php" method="POST">
+<fieldset>
+<legend>Some Fields</legend>
+<input tabindex="4" type="text" name="myText" placeholder="Enter stuff here">
+<input tabindex="3" type="reset" value="Clear Data">
+<input tabindex="2" type="submit" value="Apply">
+<input type="image" src="arrow.png">
+<button>I am a button</button>
+</fieldset>
+<textarea placeholder="Put lots of text here"></textarea>
+<label for="password">Enter your password:</label><input type="password" id="password">
+Enter a url:<input type="url" required value="http://www.google.com">
+Enter an email:<input type="email" disabled value="slubowsky@gmail.com">
+Enter your phone number<input type="tel">
+Enter a number:<input type="number" step="10" required value="20" autofocus>
+<input name="hiddenField" type="hidden" value="This is a hidden value">
+<input name="spam" type="checkbox" checked>Send me Spam
+<div>
+<input type="radio" name="choices" value="red">Red
+<input type="radio" name="choices" value="blue" checked>Blue
+<input type="radio" name="choices" value="green">Green
+</div>
+<div>
+<label for="foo">Choose some fruit:</label>
+<select name="foo" size="6" multiple>
+	<option value="apple">Apple</option>
+	<option value="pear" selected>Pear</option>
+	<option value="banana">Banana</option>
+	<option value="orange">Orange</option>
+	<option value="plum">Plum</option>
+	<option value="cherry">Cherry</option>
+</select>
+</div>
+</form>
+<form action="foo.php" method="POST" enctype="multipart/form-data">
+	<input type="file" accept="image/jpeg, image/gif, image/png">
+	<input type="submit" value="Upload File">
+</form>
+</body>
+</html>

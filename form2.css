@@ -1,0 +1,37 @@
+fieldset {
+	display: inline;
+	padding: 14px;
+}
+
+input {
+	display: block;
+}
+
+label {
+	float: left;
+	width: 6em;
+	text-align: right;
+	margin-right: .5em;
+}
+
+input[type="reset"], input[type="submit"] {
+	display: inline;
+}
+
+input[type="reset"] {
+	margin-left: 7.7em;
+}
+
+input[required] {
+	border: 2px solid;
+}
+
+input[type="email"]:invalid {
+	border-color: red;
+}
+
+@media print {
+	body {
+		font-family: serif;
+	}
+}
